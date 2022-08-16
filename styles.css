@@ -1,0 +1,35 @@
+nav {
+    padding-left : 0px;
+    background-color: lightblue;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    padding:10px 20px;
+}
+nav li:hover {
+    background-color: lightpink;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+div {
+    border: 3px solid blue;
+}
+
+.checking-border {
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box; /*makes the widt/height of the 'box' include border-width */
+}

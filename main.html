@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My very own FEA website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="table">
+        <ul id="horizontal-list">
+           <li><a href="">Basic Theory</a></li>
+           <li><a href="">Solver Types</a></li>
+           <li><a href="">Examples</a></li>
+           <li><a href="">Tips&Tricks</a></li>
+           <li><a href="">About</a></li>
+        </ul>
+        </div>
+    </nav>
+    <hr>
+    <header>
+    <h1>The basics of Finite Element Analysis</h1>
+    <hr>
+    </header>
+    <main>
+    <h2>What is it all about?</h2>
+    <p>Finite Element analysis is a numerical method...</p>
+    <div>
+        <img src="fea1.jpg" alt="FEA example picture">
+    </div>
+    <h3>A list of typical solvers based on Nastran (some are ommited due to variety of Nastran vendors ie. MSC, Siemens etc.):</h3>
+    <ul>
+        <li><a href="">Linear Static (sol. 101)</a></li>
+        <li><a href="">Modal (sol. 103) </a></li>
+        <li><a href="">Buckling (sol. 105)</a></li>
+        <li><a href="">Non-Linear Static (sol. 106)</a></li>
+        <li><a href="">Direct Complex Eigenvalue (sol. 107)</a></li>
+        <li><a href="">Direct Frequency Response (sol. 108)</a></li>
+        <li><a href="">Direct Transient Response (sol. 109)</a></li>
+        <li><a href="">Modal Complex Eigenvalue (sol. 110)</a></li>
+        <li><a href="">Modal Frequency Response (sol. 111)</a></li>
+        <li><a href="">Modal transient Response (sol. 112)</a></li>
+        <li><a href="">Nonlinear Transient (sol. 129)</a></li>
+        <li><a href="">Static Aeroelastic Analysis (sol. 144)</a></li>
+        <li><a href="">Flutter / Aeroservoelastic analysis (sol. 145)</a></li>
+        <li><a href="">Non-Linear static coupled with heat transfer (sol. 153)</a></li>
+        <li><a href="">Dynamic Design Analysis Method (sol. 159)</a></li>
+        <li><a href="">Dynamic Design Analysis Method (sol. 187)</a></li>
+        <li><a href="">Design Optimization and Sensitivity analysis (sol. 200)</a></li>
+        <li><a href="">Non-Linear Static and Dynamic implicit (sol. 401)</a></li>
+        <li><a href="">Implicit Non-Linear (ADINA for NX Nastran) (sol. 601)</a></li>
+        <li><a href="">Explicit Non-Linear (LS Dyna plus MSC. Dytran) (sol. 700)</a></li>
+        <li><a href="">Explicint Non-LInear (ADINA for NX Nastran) (sol. 701)</a></li>
+    </ul>
+
+    <div>
+        <h3>Sign-in form for the future</h3>
+        <form action="/somewhere">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first" required maxlength="30">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last" required maxlength="30">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="pw" required minlength="8" maxlength="20">
+            </div>
+            <div>
+                <div>
+                <p>Select your level of experience:</p>
+                <input type="radio" id="novice" name="experience" value="novice" required>
+                <label for="novice">Novice</label>
+                </div>
+                <div>
+                    <input type="radio" id="experienced" name="experience" value="experienced" required>
+                    <label for="experienced">Experienced</label>
+                </div>
+                <div>
+                    <input type="radio" id="master" name="experience" value="master" required>
+                    <label for="master">Master</label>
+                </div>
+            </div>
+            <div>
+                <label for="select_age">Select Age Group</label>
+                <select name="age" id="select_age">
+                    <option value="Minor">Below 18</option>
+                    <option value="Adult">Between 18 and 65</option>
+                    <option value="Elder">Above 65</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Write whatever else is on your mind</label>
+                <br>
+                <textarea id="msg" rows="10" cols="40" name="msg" placeholder="write here" maxlength="300"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h3>Some table for the future</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Rowspan2</th>
+                    <th colspan="2">Colspan2</th>
+                    <th rowspan="2">Rowspan 2 v2</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>header1</th>
+                    <th>header2</th>
+                    <th>header3</th>
+                    <th>header4</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+    
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+            <!--there is also tfoot available-->
+    
+    
+        </table>
+    </div>
+<p class="checking-border">Some paragraph just to test border etc.</p>
+
+    </main>
+
+    <footer>
+        <hr>
+        Created by Mat Matovsky, 2022. All rights reserved xD.
+    </footer>
+</body>
+</html>
