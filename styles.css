@@ -4,7 +4,7 @@ nav {
     text-align: center;
 }
 nav li {
-    display: inline-block;
+    display: inline-block; /*other common displays are inline, block and none*/
     padding:10px 20px;
 }
 nav li:hover {
@@ -26,10 +26,32 @@ div {
 
 .checking-border {
     width: 200px;
-    height: 50px;
+    height: 100px;
     background-color: pink;
     border-width: 5px;
     border-color: black;
     border-style: solid;
     box-sizing: border-box; /*makes the widt/height of the 'box' include border-width */
+    border-radius: 10%;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin: 100px;
+}
+
+.photo {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.some-div {
+    width: 80%;
+    margin: auto;
+}
+
+
+.caption {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
 }
