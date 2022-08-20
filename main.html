@@ -63,46 +63,36 @@
     <div>
         <h3>Sign-in form for the future</h3>
         <form action="/somewhere">
-            <div>
+            <fieldset>
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first" required maxlength="30">
                 <label for="last_name">Last Name</label>
                 <input type="text" id="last_name" name="last" required maxlength="30">
-            </div>
-            <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="pw" required minlength="8" maxlength="20">
-            </div>
-            <div>
-                <div>
+            </fieldset>
+                <fieldset>
                 <p>Select your level of experience:</p>
                 <input type="radio" id="novice" name="experience" value="novice" required>
                 <label for="novice">Novice</label>
-                </div>
-                <div>
                     <input type="radio" id="experienced" name="experience" value="experienced" required>
                     <label for="experienced">Experienced</label>
-                </div>
-                <div>
                     <input type="radio" id="master" name="experience" value="master" required>
                     <label for="master">Master</label>
-                </div>
-            </div>
-            <div>
                 <label for="select_age">Select Age Group</label>
                 <select name="age" id="select_age">
                     <option value="Minor">Below 18</option>
                     <option value="Adult">Between 18 and 65</option>
                     <option value="Elder">Above 65</option>
                 </select>
-            </div>
-            <div>
+            </fieldset>
+        <fieldset>
                 <label for="msg">Write whatever else is on your mind</label>
                 <br>
                 <textarea id="msg" rows="10" cols="40" name="msg" placeholder="write here" maxlength="300"></textarea>
-            </div>
+            </fieldset>
             <button type="submit">Submit</button>
         </form>
     </div>
